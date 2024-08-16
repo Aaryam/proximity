@@ -1,0 +1,57 @@
+
+:root {
+    --cell: rgb(225, 225, 225);
+}
+
+body {
+    margin: 0;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+}
+
+.game {
+    flex: 8;
+    display: flex;
+    flex-flow: row;
+}
+
+.board {
+    flex: 2;
+    display: flex;
+    flex-flow: column;
+}
+
+.filler {
+    flex: 1;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+    flex-flow: row;
+}
+
+.cell {
+    flex: 1;
+    border: solid 0.5px white;
+    background-color: var(--cell);
+    border-radius: 5px;
+}
+
+.cell:hover {
+    opacity: 0.95;
+    cursor: pointer;
+}
+
+.host {
+    background-color: rgb(226, 114, 114);
+}
+
+.player {
+    background-color: rgb(87, 130, 198);
+}
